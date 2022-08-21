@@ -1,32 +1,37 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+  <v-app>
+    <MainNavBar class="mb-15" />
+
+    <v-main>
+      <v-sheet
+        id="scrolling-techniques-7"
+        class="overflow-y-auto" 
+        max-height="100vh"  
+      >
+        <router-view
+      /> 
+      </v-sheet>  
+    </v-main>
+  </v-app>
 </template>
 
+<script>
+import MainNavBar from "@/components/layout/MainNavBar.vue";
+export default {
+  name: "App",
+  components: {
+    MainNavBar,
+  },
+  data: () => ({
+    //
+  }),
+};
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+/* .navBar{
+  position: sticky  ;
+  top: 0px ;
+ 
+} */
+/*  z-index: 99; */
 </style>
