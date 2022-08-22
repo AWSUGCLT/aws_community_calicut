@@ -1,12 +1,12 @@
 <template >
-  <div class="pt-5" >
-    <v-layout justify-end align-center class="mt-10" wrap >
+  <div >
+    <v-layout class="mt-n15  " wrap >
       <v-flex xs12 sm12 md6>
         <about />
       </v-flex>
       <v-flex xs12  sm12 md6 class="mt-xs-n10"> 
         <v-img
-          class="mt-md-15"
+          class="mt-md-10"
           height="65vh"
           aspect-ratio="1"
           contain

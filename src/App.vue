@@ -6,9 +6,10 @@
       <v-sheet
         id="scrolling-techniques-7"
         class="overflow-y-auto"
-        max-height="100vh"
+        
       >
-        <!-- class="overflow-y-auto"   -->
+
+        <!--max-height="100vh"  class="overflow-y-auto"   -->
         <router-view />
       </v-sheet>
        <Footer /> 

@@ -8,7 +8,7 @@ Vue.config.productionTip = false
 Vue.mixin({
   data: function () {
     return {
-      title:"AWS Community"
+      title:"AWS User Group Calicut"
     }
   }}
 )

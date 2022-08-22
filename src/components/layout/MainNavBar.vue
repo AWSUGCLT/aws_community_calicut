@@ -40,10 +40,11 @@
       </v-list>
     </v-navigation-drawer> -->
     <v-app-bar
-      absolute
+      app 
+    
       color="white"
       elevate-on-scroll
-      scroll-target="#scrolling-techniques-7"
+      
     >
       <!-- app 
       absolute
@@ -51,7 +52,7 @@
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7" -->
       <!-- scroll-target="#scrolling-techniques-7" -->
-      <v-toolbar-title class="primary--text">{{ title }}</v-toolbar-title>
+      <v-toolbar-title class="primary--text font-weight-bold ">{{ title }}</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
