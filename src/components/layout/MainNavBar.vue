@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-navigation-drawer
+    <!-- <v-navigation-drawer
       v-if="$vuetify.breakpoint.mdAndDown"
       v-model="navBar"
       absolute
@@ -38,19 +38,24 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
     <v-app-bar
       absolute
       color="white"
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7"
     >
+      <!-- app 
+      absolute
+      color="white"
+      elevate-on-scroll
+      scroll-target="#scrolling-techniques-7" -->
       <!-- scroll-target="#scrolling-techniques-7" -->
       <v-toolbar-title class="primary--text">{{ title }}</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
-      <v-app-bar-nav-icon
+      <!-- <v-app-bar-nav-icon
         class="primary--text"
         @click="openNavBar"
         v-if="$vuetify.breakpoint.mdAndDown"
@@ -67,7 +72,7 @@
             >
           </v-btn>
         </span>
-      </span>
+      </span> -->
     </v-app-bar>
   </div>
 </template>
