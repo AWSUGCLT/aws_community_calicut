@@ -11,6 +11,9 @@ Vue.mixin({
       title:"AWS User Group Calicut"
     }
   }}
+
+
+  
 )
 new Vue({
   router,
