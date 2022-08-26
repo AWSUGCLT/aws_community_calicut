@@ -39,20 +39,30 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer> -->
-    <v-app-bar
-      app 
-    
-      color="white"
-      elevate-on-scroll
-      
-    >
+    <v-app-bar app color="white" elevate-on-scroll>
+      <!-- <v-layout class="red"> -->
+      <v-img
+        :src="require('@/assets/images/logo.png')"
+        contain
+        height="55"
+        :position="!$vuetify.rtl ? 'left' : 'right'"
+      />
+      <!--  :position="!$vuetify.rtl ? 'left' : 'right'" -->
+      <!-- <v-toolbar-title class="primary--text font-weight-bold">
+        <span>{{ title }}</span>
+      </v-toolbar-title> -->
+      <!-- </v-layout> -->
+
       <!-- app 
       absolute
       color="white"
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7" -->
       <!-- scroll-target="#scrolling-techniques-7" -->
-      <v-toolbar-title class="primary--text font-weight-bold ">{{ title }}</v-toolbar-title>
+      <!-- <v-toolbar-title class="primary--text font-weight-bold ">
+       
+       <span>{{ title }}</span> 
+       </v-toolbar-title> -->
 
       <v-spacer></v-spacer>
 

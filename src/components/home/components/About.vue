@@ -10,7 +10,7 @@
       </h3>
 
       <p class="ma-5 px-5 third font-weight-medium textColor--text">
-        AWS Community Calicut, is a group of passionate Amazon Web Services
+        AWS User Group Calicut, is a group of passionate Amazon Web Services
         Developers, Solution Architects, DevOps Engineers, Users, Evangelists, &
         Partners who meet to share knowledge, share best practices, discuss
         about AWS technology services and product announcements . All skills

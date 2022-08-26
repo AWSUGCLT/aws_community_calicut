@@ -10,7 +10,7 @@
           height="65vh"
           aspect-ratio="1"
           contain
-          src="@/assets/1032.jpg"
+          src="@/assets/images/banner.jpg"
         />
       </v-flex>
     </v-layout>
