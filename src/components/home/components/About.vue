@@ -39,7 +39,7 @@ export default {
   /* color: #ed002e; */
   font-size: 50px;
   /* font-size: 3.5vw; */
-  font-weight:600 ;  
+  font-weight:500 ;   
   text-align: center;
   /* white-space: nowrap; */
 }
