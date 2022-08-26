@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="mt-10">
     <div id="text">
-      <span class="textColor--text">No Matter How Hard it is , <br /></span>
+      <span class="textColor--text">No Matter How Hard it is , <br /></span> 
       <span class="primary--text second"> Just Keep Learning </span>
     </div>
     <div>
@@ -39,6 +39,7 @@ export default {
   /* color: #ed002e; */
   font-size: 50px;
   /* font-size: 3.5vw; */
+  font-weight:600 ;  
   text-align: center;
   /* white-space: nowrap; */
 }
