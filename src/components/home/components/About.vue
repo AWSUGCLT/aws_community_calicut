@@ -16,7 +16,7 @@
         about AWS technology services and product announcements . All skills
         levels including students who would like to learn about AWS are welcome
         to help accomplish our motto of learning, sharing and networking. Let’s
-        join hands to empower this tech community to make it bigger and better !!
+        join hands to empower this tech community to make it bigger and better !
       </p>
     </div>
     <v-layout justify-center>
