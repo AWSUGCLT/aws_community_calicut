@@ -17,3 +17,9 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## to deploy
+npm run deploy 
+
+in package.json
+"deploy": "sh deploy.sh" use in gitbash

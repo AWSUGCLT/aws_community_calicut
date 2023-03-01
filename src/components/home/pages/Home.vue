@@ -1,6 +1,6 @@
-<template >
-  <div >
-    <v-layout class="mt-n15  " wrap >
+<template>
+  <div class="home-main ">
+    <!-- <v-layout class="mt-n15  " wrap >
       <v-flex xs12 sm12 md6>
         <about />
       </v-flex>
@@ -13,7 +13,18 @@
           src="@/assets/images/banner.jpg"
         />
       </v-flex>
-    </v-layout>
+    </v-layout> -->
+    <div  class="home-about">
+      <about />
+    </div>
+    <div class="home-img">
+      <v-img
+       class="images"
+        aspect-ratio="1"
+        contain
+        src="@/assets/images/banner.jpg"
+      />
+    </div>
   </div>
 </template>
 
@@ -46,3 +57,26 @@ export default {
   // },
 };
 </script>
+<style>
+.home-main { 
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+.home-about,.home-img{
+  flex: 1;
+}
+.images{
+  height: 100%;
+}
+.home-img{
+  /* background-color: red; */
+  height: 65vh;
+}
+@media screen and (max-width:900px){
+  .home-main{
+    flex-direction: column;
+   align-items: normal;
+  }
+}
+</style>
