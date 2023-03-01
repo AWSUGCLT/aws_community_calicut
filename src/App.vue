@@ -1,20 +1,13 @@
 <template>
   <v-app>
-    <MainNavBar class="mb-15" />
-
+    <MainNavBar />
     <v-main>
-      <v-sheet
-        id="scrolling-techniques-7"
-        class="overflow-y-auto"
-        
-      >
-
+      <v-sheet id="scrolling-techniques-7" class="overflow-y-auto">
         <!--max-height="100vh"  class="overflow-y-auto"   -->
         <router-view />
       </v-sheet>
-       <Footer /> 
+      <Footer />
     </v-main>
-   
   </v-app>
 </template>
 

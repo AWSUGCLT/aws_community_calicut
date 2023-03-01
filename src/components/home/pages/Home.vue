@@ -1,5 +1,5 @@
 <template>
-  <div class="home-main">
+  <div class="home-main mt-5">
     <!-- <v-layout class="mt-n15  " wrap >
       <v-flex xs12 sm12 md6>
         <about />
@@ -19,8 +19,7 @@
     </div>
     <div class="home-img">
       <v-img
-        class="mt-md-10"
-        height="65vh"
+       height="65vh"
         aspect-ratio="1"
         contain
         src="@/assets/images/banner.jpg"
@@ -61,7 +60,7 @@ export default {
 <style>
 .home-main { 
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 .home-about,.home-img{
   flex: 1;

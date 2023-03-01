@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="mt-10">
+  <v-container fluid >
     <div id="text">
       <span class="textColor--text">No Matter How Hard it is , <br /></span> 
       <span class="primary--text second"> Just Keep Learning </span>
