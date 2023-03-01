@@ -1,6 +1,7 @@
 <template>
-  <div class="home-main ">
-    <!-- <v-layout class="mt-n15  " wrap >
+  <div>
+    <div class="home-main">
+      <!-- <v-layout class="mt-n15  " wrap >
       <v-flex xs12 sm12 md6>
         <about />
       </v-flex>
@@ -14,24 +15,27 @@
         />
       </v-flex>
     </v-layout> -->
-    <div  class="home-about">
-      <about />
+      <div class="home-about">
+        <about />
+      </div>
+      <div class="home-img">
+        <v-img
+          class="images"
+          aspect-ratio="1"
+          contain
+          src="@/assets/images/banner.jpg"
+        />
+      </div>
     </div>
-    <div class="home-img">
-      <v-img
-       class="images"
-        aspect-ratio="1"
-        contain
-        src="@/assets/images/banner.jpg"
-      />
-    </div>
+    <all-event-components />
   </div>
 </template>
 
 <script>
+import AllEventComponents from "@/components/events/components/AllEventComponents.vue";
 import About from "../components/About.vue";
 export default {
-  components: { About },
+  components: { About, AllEventComponents },
 
   // props: {
   //   banner: {
@@ -58,25 +62,26 @@ export default {
 };
 </script>
 <style>
-.home-main { 
+.home-main {
   display: flex;
-  margin-top: 20px;
+  /* margin-top: 35px; */
   align-items: center;
 }
-.home-about,.home-img{
+.home-about,
+.home-img {
   flex: 1;
 }
-.images{
+.images {
   height: 100%;
 }
-.home-img{
+.home-img {
   /* background-color: red; */
   height: 65vh;
 }
-@media screen and (max-width:900px){
-  .home-main{
+@media screen and (max-width: 900px) {
+  .home-main {
     flex-direction: column;
-   align-items: normal;
+    align-items: normal;
   }
 }
 </style>

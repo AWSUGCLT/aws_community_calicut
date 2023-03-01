@@ -1,7 +1,7 @@
 <template>
-  <v-container fluid >
+  <v-container fluid>
     <div id="text">
-      <span class="textColor--text">No Matter How Hard it is , <br /></span> 
+      <span class="textColor--text">No Matter How Hard it is , <br /></span>
       <span class="primary--text second"> Just Keep Learning </span>
     </div>
     <div>
@@ -9,7 +9,7 @@
         <span class="about"> About Us</span>
       </h3>
 
-      <p class="ma-5 px-5 third font-weight-medium textColor--text">
+      <p class="third font-weight-medium textColor--text">
         AWS User Group Calicut, is a group of passionate Amazon Web Services
         Developers, Solution Architects, DevOps Engineers, Users, Evangelists, &
         Partners who meet to share knowledge, share best practices, discuss
@@ -39,7 +39,7 @@ export default {
   /* color: #ed002e; */
   font-size: 50px;
   /* font-size: 3.5vw; */
-  font-weight:500 ;   
+  font-weight: 500;
   text-align: center;
   /* white-space: nowrap; */
 }
