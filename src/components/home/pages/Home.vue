@@ -20,24 +20,22 @@
       </div>
       <div class="home-img">
         <v-img
-          class="images"
+        v-if="!(showImage>=2 && showImage<=3)"
+          class="images fade-design"
           aspect-ratio="1"
           contain
           src="@/assets/images/banner.jpg"
         />
-        <!-- <iframe class="svg-icon" style="border: none;" src="https://embed.lottiefiles.com/animation/71003"></iframe> -->
+        <div v-else>
+ <!-- <iframe class="svg-icon" style="border: none;" src="https://embed.lottiefiles.com/animation/71003"></iframe> -->
         <!-- <iframe class="svg-icon" style="border: none;"  src="https://embed.lottiefiles.com/animation/51371"></iframe> -->
-        <!-- <lottie-player
-          src="https://assets8.lottiefiles.com/packages/lf20_3jezq8s4.json"
-          background="transparent"
-          speed="1"
-          class="svg-icon" 
-          
-          loop
-          autoplay
-        ></lottie-player> -->
-        <!-- <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_27uy4hg5.json"  background="transparent"  speed=".5" class="svg-icon"   loop  autoplay></lottie-player> -->
-      </div>
+        <lottie-player v-if="showImage==2" src="https://assets3.lottiefiles.com/packages/lf20_27uy4hg5.json"  background="transparent"  speed=".5" class="svg-icon fade-design"   loop  autoplay></lottie-player>
+        <!-- <lottie-player v-if="showImage==3"  src="https://assets8.lottiefiles.com/packages/lf20_3jezq8s4.json"   background="transparent" speed="1" class="svg-icon"  loop autoplay ></lottie-player> -->
+        <lottie-player v-if="showImage==3" src="https://assets7.lottiefiles.com/packages/lf20_yswivetl.json"  background="transparent"  speed="1"  class="svg-icon fade-design"   loop  autoplay></lottie-player>
+     
+        </div>
+        
+        </div>
     </div>
     <all-event-components />
   </div>
@@ -56,7 +54,9 @@ export default {
   //   },
   // },
   data() {
-    return {};
+    return {
+      showImage:1
+    };
   },
   methods: {},
   // computed: {
@@ -71,6 +71,11 @@ export default {
   //     };
   //   },
   // },
+  created(){
+    const rndInt = Math.floor(Math.random() * 3) + 1
+    console.log(rndInt)
+    this.showImage=rndInt
+  }
 };
 </script>
 <style>
@@ -87,6 +92,20 @@ export default {
   /* height="100%" width="100%" */
   height: 100%;
   width: 100%;
+  
+}
+.fade-design{
+  opacity: 1;  
+  animation: fade 5s;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .home-about,

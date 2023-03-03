@@ -1,6 +1,9 @@
 <template>
   <!-- <div class="zoom"  > -->
   <v-card class="white--text" elevation="5">
+    <div class="card-img">
+      <img src="../../../assets/event1.jpg" alt=""> 
+    </div>
     <v-card-text>
       <div class="tertiary--text">21 Mar 2023</div>
       <p class="text-h6 tertiary--text">Aws Offline Meet Up</p>
@@ -80,5 +83,9 @@ export default {
   opacity: 1 !important;
   position: absolute;
   width: 100%;
+}
+.card-img img{
+  width: 100%;
+  height: 12rem;
 }
 </style>

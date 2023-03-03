@@ -1,8 +1,8 @@
 <template>
   <v-container fluid>
-    <div id="text">
+    <div id="text" >
       <span class="dark--text first-1">No Matter How Hard it is , <br /></span>
-      <span class="primary--text second-1"> Just Keep Learning </span>
+      <span class="primary--text second-1 "> Just Keep Learning </span>
     </div>
     <div>
       <h3 class="text-center mt-5 textColor--text">

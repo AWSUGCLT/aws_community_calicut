@@ -5,7 +5,7 @@
     </v-layout> -->
     <v-footer color="white " padless>
       <v-card
-        class="popup-footer-card mt-15 white text-center first-card"
+        class="popup-footer-card mt-15 tertiary lighten-1  text-center first-card"
         min-height="5vh"
         width="90%"
       >
@@ -17,7 +17,7 @@
               :key="icon"
               class="icon-link"
             >
-              <v-btn class="mx-4 tertiary--text lighten-3" icon>
+              <v-btn class="mx-4 primary--text lighten-3" icon>
                 <v-icon size="24px" color="">{{ icon.icon }}</v-icon>
               </v-btn>
             </a>
@@ -25,7 +25,7 @@
 
           <v-divider></v-divider>
 
-          <v-card-text class="tertiary--text">
+          <v-card-text class="primary--text">
             {{ new Date().getFullYear() }} —
             <strong>{{ title }}</strong>
           </v-card-text>
@@ -36,7 +36,7 @@
         flat
         tile
         elevation="6"
-        class="tertiary lighten-1"
+        class="second-footer primary darken-1"
         height="20vh"
       >
       </v-card>
@@ -71,6 +71,9 @@ export default {
 .footer {
   background-color: #ecc434 !important;
 }
+.second-footer{
+  /* background-color: #f9ae4c !important; */
+}
 .popup-footer-card {
   margin: auto;
   margin-bottom: -10vh;
@@ -78,5 +81,6 @@ export default {
   display: flex;
   align-items: end;
   justify-content: center;
+  /* background-color: #f3981e !important; */
 }
 </style>

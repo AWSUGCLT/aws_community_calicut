@@ -24,6 +24,13 @@ export default {
   data: () => ({
     //
   }),
+  created() {
+    console.log("helooii")
+    this.animation()
+  },
+  methods: {
+   
+  },
 };
 </script>
 <style>
@@ -35,5 +42,16 @@ export default {
 /*  z-index: 99; */
 .main {
   padding: 0 20px !important ;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-60%);
+  transition: all 2s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
 }
 </style>

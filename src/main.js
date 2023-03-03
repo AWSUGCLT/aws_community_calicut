@@ -10,7 +10,27 @@ Vue.mixin({
     return {
       title:"AWS User Group Calicut"
     }
-  }}
+  },
+  methods:{
+    animation() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          console.log("hey")
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      });
+      const hiddenElement = document.querySelectorAll(".hidden");
+      hiddenElement.forEach(el=>observer.observe(el)) 
+    },
+    
+  },
+  created(){
+    console.log("created")
+    this.animation()
+  }
+}
 
 
   
