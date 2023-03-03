@@ -1,26 +1,26 @@
 <template>
-  <div>
-    <v-tabs  v-model="tabs">
+  <div class="">
+    <v-tabs background-color="" color="tertiary" v-model="tabs">
       <v-tab v-for="event in events" :key="event.name">
         <v-icon left> {{ event.icon }} </v-icon>
         <span style="text-transform: capitalize">{{ event.name }}</span>
       </v-tab>
-      <v-tab-item>
+      <v-tab-item class="">
         <!-- <v-layout justify-start class="pa-5" wrap>
           <v-flex xs12 sm6 md4 v-for="loop in 6" :key="loop"> -->
-            <div class="pa-1 my-5 event-card">
-              <event class="zoom" />
-            </div>
-          <!-- </v-flex>
+        <div class="pa-1 my-5 event-card">
+          <event class="zoom" />
+        </div>
+        <!-- </v-flex>
         </v-layout> -->
       </v-tab-item>
       <v-tab-item>
         <!-- <v-layout justify-start class="pa-5" wrap>
           <v-flex xs12 sm6 md4 v-for="loop in 2" :key="loop"> -->
-            <div class="pa-1 my-5 event-card">
-              <event class="zoom" />
-            </div>
-          <!-- </v-flex>
+        <div class="pa-1 my-5 event-card">
+          <event />
+        </div>
+        <!-- </v-flex>
         </v-layout> -->
       </v-tab-item>
     </v-tabs>
@@ -52,9 +52,9 @@ export default {
 .zoom {
   transition: transform 0.3s;
 }
-.event-card{
+.event-card {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 </style>

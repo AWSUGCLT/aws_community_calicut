@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="home-main">
+    <div class="home-main pt-10">
       <!-- <v-layout class="mt-n15  " wrap >
       <v-flex xs12 sm12 md6>
         <about />
@@ -25,6 +25,18 @@
           contain
           src="@/assets/images/banner.jpg"
         />
+        <!-- <iframe class="svg-icon" style="border: none;" src="https://embed.lottiefiles.com/animation/71003"></iframe> -->
+        <!-- <iframe class="svg-icon" style="border: none;"  src="https://embed.lottiefiles.com/animation/51371"></iframe> -->
+        <!-- <lottie-player
+          src="https://assets8.lottiefiles.com/packages/lf20_3jezq8s4.json"
+          background="transparent"
+          speed="1"
+          class="svg-icon" 
+          
+          loop
+          autoplay
+        ></lottie-player> -->
+        <!-- <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_27uy4hg5.json"  background="transparent"  speed=".5" class="svg-icon"   loop  autoplay></lottie-player> -->
       </div>
     </div>
     <all-event-components />
@@ -62,17 +74,28 @@ export default {
 };
 </script>
 <style>
+#attribution_block:first-child {
+  display: none !important;
+}
 .home-main {
   display: flex;
   /* margin-top: 35px; */
+
   align-items: center;
 }
+.svg-icon {
+  /* height="100%" width="100%" */
+  height: 100%;
+  width: 100%;
+}
+
 .home-about,
 .home-img {
   flex: 1;
 }
 .images {
   height: 100%;
+  background-blend-mode: multiply;
 }
 .home-img {
   /* background-color: red; */
@@ -82,6 +105,13 @@ export default {
   .home-main {
     flex-direction: column;
     align-items: normal;
+  }
+  .svg-icon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* height="100%" width="100%" */
+    height: 500%;
+    /* width: 100%; */
   }
 }
 </style>

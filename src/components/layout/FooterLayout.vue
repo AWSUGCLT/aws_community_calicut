@@ -1,43 +1,44 @@
 <template>
-  <div class="mt-10">
+  <div>
     <!-- <v-layout justify-center>
       <v-card class="card" height="50vh" width="70%"> </v-card>
     </v-layout> -->
-    <v-footer dark padless>
+    <v-footer color="white " padless>
+      <v-card
+        class="popup-footer-card mt-15 white text-center first-card"
+        min-height="5vh"
+        width="90%"
+      >
+        <div>
+          <v-card-text class="mt-10">
+            <a
+              :href="icon.link"
+              v-for="icon in icons"
+              :key="icon"
+              class="icon-link"
+            >
+              <v-btn class="mx-4 tertiary--text lighten-3" icon>
+                <v-icon size="24px" color="">{{ icon.icon }}</v-icon>
+              </v-btn>
+            </a>
+          </v-card-text>
+
+          <v-divider></v-divider>
+
+          <v-card-text class="tertiary--text">
+            {{ new Date().getFullYear() }} —
+            <strong>{{ title }}</strong>
+          </v-card-text>
+        </div>
+      </v-card>
       <v-card
         width="100%"
         flat
         tile
-        class="primary lighten-1 white--text text-center"
+        elevation="6"
+        class="tertiary lighten-1"
+        height="20vh"
       >
-        <v-card-text>
-          <a
-            :href="icon.link"
-            v-for="icon in icons"
-            :key="icon"
-            class="icon-link"
-          >
-            <v-btn class="mx-4 white--text" icon>
-              <v-icon size="24px">{{ icon.icon }}</v-icon>
-            </v-btn>
-          </a>
-        </v-card-text>
-
-        <!-- <v-card-text class="white--text pt-0"
-          >Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet.
-          Mauris cursus commodo interdum. Praesent ut risus eget metus luctus
-          accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim
-          a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula
-          lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus
-          iaculis dui sollicitudin.</v-card-text
-        > --> 
-
-        <v-divider></v-divider>
-
-        <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} —
-          <strong>{{ title  }}</strong>
-        </v-card-text>
       </v-card>
     </v-footer>
   </div>
@@ -59,9 +60,23 @@ export default {
 .icon-link {
   text-decoration: none;
 }
+.first-card {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
 .card {
   position: relative;
   margin-bottom: 100px;
   z-index: 10;
+}
+.footer {
+  background-color: #ecc434 !important;
+}
+.popup-footer-card {
+  margin: auto;
+  margin-bottom: -10vh;
+  z-index: 12;
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
 </style>

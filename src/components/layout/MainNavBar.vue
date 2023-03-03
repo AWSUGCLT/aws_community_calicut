@@ -39,14 +39,14 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer> -->
-    <v-app-bar app color="white" elevate-on-scroll   height="73">
+    <v-app-bar app color="white" elevate-on-scroll height="93">
       <!-- <v-layout class="red"> -->
       <v-img
-        :src="require('@/assets/images/new_logo.png')"
+        :src="require('@/assets/final_logo.png')"
         contain
-        height="105"
+        height="75"
         :position="!$vuetify.rtl ? 'left' : 'right'"
-       class="mt-1"
+        class="mt-1"
       />
       <!--  :position="!$vuetify.rtl ? 'left' : 'right'" -->
       <!-- <v-toolbar-title class="primary--text font-weight-bold">

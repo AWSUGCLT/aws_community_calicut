@@ -1,15 +1,15 @@
 <template>
   <v-container fluid>
     <div id="text">
-      <span class="textColor--text">No Matter How Hard it is , <br /></span>
-      <span class="primary--text second"> Just Keep Learning </span>
+      <span class="dark--text first-1">No Matter How Hard it is , <br /></span>
+      <span class="primary--text second-1"> Just Keep Learning </span>
     </div>
     <div>
       <h3 class="text-center mt-5 textColor--text">
-        <span class="about"> About Us</span>
+        <span class="about dark--text"> About Us</span>
       </h3>
 
-      <p class="third font-weight-medium textColor--text">
+      <p class="third-1 font-weight-medium dark--text">
         AWS User Group Calicut, is a group of passionate Amazon Web Services
         Developers, Solution Architects, DevOps Engineers, Users, Evangelists, &
         Partners who meet to share knowledge, share best practices, discuss
@@ -20,8 +20,13 @@
       </p>
     </div>
     <v-layout justify-center>
-      <a href="https://www.linkedin.com/groups/9202512">
-        <v-btn class="primary"> Join Now </v-btn>
+      <a
+        href="https://www.linkedin.com/groups/9202512"
+        style="text-decoration: none"
+      >
+        <v-btn class="tertiary primary--text second-1 lighten-1">
+          Join Now
+        </v-btn>
       </a>
     </v-layout>
   </v-container>
@@ -44,13 +49,23 @@ export default {
   /* white-space: nowrap; */
 }
 
-#text .second {
+#text .second-1 {
   /* color: #444; */
   /* font-size: 30px; */
   font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
   /* font-size: 3.5vw; */
 }
-.third {
+.first-1 {
+  /* color: #444; */
+  /* font-size: 30px; */
+  /* font-size: 60px;
+  font-weight: 700; */
+  /* letter-spacing: .5rem; */
+  /* font-size: 3.5vw; */
+}
+.third-1 {
   font-weight: 100;
   font-size: 20px;
   /* font-size: 1.3vw; */

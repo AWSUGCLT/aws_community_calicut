@@ -2,6 +2,7 @@
   <v-app>
     <MainNavBar class="mb-15" />
     <v-main class="main">
+      <!-- secondary -->
       <v-sheet id="scrolling-techniques-7" class="overflow-y-auto">
         <!--max-height="100vh"  class="overflow-y-auto"   -->
         <router-view />
@@ -32,7 +33,7 @@ export default {
  
 } */
 /*  z-index: 99; */
-.main{
-  padding: 0 20px !important ; 
+.main {
+  padding: 0 20px !important ;
 }
 </style>
