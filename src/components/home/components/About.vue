@@ -1,8 +1,8 @@
 <template>
   <v-container fluid>
-    <div id="text" >
+    <div id="text">
       <span class="dark--text first-1">No Matter How Hard it is , <br /></span>
-      <span class="primary--text second-1 "> Just Keep Learning </span>
+      <span class="primary--text second-1"> Just Keep Learning </span>
     </div>
     <div>
       <h3 class="text-center mt-5 textColor--text">
@@ -24,7 +24,7 @@
         href="https://www.linkedin.com/groups/9202512"
         style="text-decoration: none"
       >
-        <v-btn class="tertiary primary--text second-1 lighten-1">
+        <v-btn class="tertiary white--text second-1 lighten-1 button-bg-1">
           Join Now
         </v-btn>
       </a>
@@ -46,15 +46,30 @@ export default {
   /* font-size: 3.5vw; */
   font-weight: 500;
   text-align: center;
+  
   /* white-space: nowrap; */
 }
 
+.button-bg-1 {
+  background-image: linear-gradient(145deg, #ff2197 0%, #ffd625 100%);
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 700 !important;
+  padding: 22px 20px !important;
+}
 #text .second-1 {
   /* color: #444; */
   /* font-size: 30px; */
   font-size: 50px;
   font-weight: 600;
   letter-spacing: 0.5rem;
+  /* background: -webkit-linear-gradient(145deg, #ff2197 0%, #ffd625 100%);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+  /* background-image:  linear-gradient(145deg,#ff2197 0%,#ffd625 100%); */
+
   /* font-size: 3.5vw; */
 }
 .first-1 {

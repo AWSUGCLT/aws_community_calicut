@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <v-tabs background-color="" color="tertiary" v-model="tabs">
+    <v-tabs background-color="" color="primary" v-model="tabs">
       <v-tab v-for="event in events" :key="event.name">
         <v-icon left> {{ event.icon }} </v-icon>
         <span style="text-transform: capitalize">{{ event.name }}</span>

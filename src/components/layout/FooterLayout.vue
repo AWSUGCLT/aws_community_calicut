@@ -5,10 +5,11 @@
     </v-layout> -->
     <v-footer color="white " padless>
       <v-card
-        class="popup-footer-card mt-15 tertiary lighten-1  text-center first-card"
-        min-height="5vh"
-        width="90%"
+        class="popup-footer-card mt-15   text-center first-card"
+        min-height="25vh" 
+       width="100%"
       >
+      <!--  width="90%" -->
         <div>
           <v-card-text class="mt-10">
             <a
@@ -25,7 +26,7 @@
 
           <v-divider></v-divider>
 
-          <v-card-text class="primary--text">
+          <v-card-text class="white--text">
             {{ new Date().getFullYear() }} —
             <strong>{{ title }}</strong>
           </v-card-text>
@@ -36,8 +37,8 @@
         flat
         tile
         elevation="6"
-        class="second-footer primary darken-1"
-        height="20vh"
+        class="second-footer  primary darken-1"
+        height="5vh"
       >
       </v-card>
     </v-footer>
@@ -61,7 +62,14 @@ export default {
   text-decoration: none;
 }
 .first-card {
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  /* background-image: linear-gradient(145deg,#7e5ce6 0%,#25b8ee 100%); */
+  background-color: #091434 !important;
+
+}
+.first-card{
+  border-radius: 0px !important;
 }
 .card {
   position: relative;
@@ -73,10 +81,12 @@ export default {
 }
 .second-footer{
   /* background-color: #f9ae4c !important; */
+  /* background-image: linear-gradient(145deg,#7e5ce6 0%,#25b8ee 100%); */
+
 }
 .popup-footer-card {
-  margin: auto;
-  margin-bottom: -10vh;
+  /* margin: auto; */
+  margin-bottom: -2vh;
   z-index: 12;
   display: flex;
   align-items: end;

@@ -20,7 +20,9 @@ export default new Vuetify({
           },
           light: {
             // primary: "#ec7211",
-            primary: "#ff9904",
+            // primary: "#4330d4",
+            // primary: "#ff9904",
+            primary: "#ff8054",
             secondary: "#4638a0",
             tertiary:"#232f3e",
             first:"#0129ac",

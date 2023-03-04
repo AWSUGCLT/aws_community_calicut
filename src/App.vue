@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <MainNavBar class="mb-15" />
-    <v-main class="main">
+    <v-main class="main pt-10 ">
       <!-- secondary -->
       <v-sheet id="scrolling-techniques-7" class="overflow-y-auto">
         <!--max-height="100vh"  class="overflow-y-auto"   -->
