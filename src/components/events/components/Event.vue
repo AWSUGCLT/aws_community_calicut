@@ -2,11 +2,11 @@
   <!-- <div class="zoom"  > -->
   <v-card class="white--text" elevation="5">
     <div class="card-img">
-      <img src="../../../assets/event1.jpg" alt="" />
+      <img src="../../../assets/eventfinal.jpg" alt="" />
     </div>
     <div class="card-details">
       <v-card-text>
-        <div class="tertiary--text">21 Mar 2023</div>
+        <div class="tertiary--text">27 Mar 2023</div>
         <p class="text-h6 tertiary--text">Aws Offline Meet Up</p>
 
         <p class="mr-n3 mt-n3 primary--text">
@@ -14,7 +14,7 @@
         </p>
         <div class="tertiary--text">
           Hi Everyone...<br />
-          Our next offline meet up will be held on 21 March 2023 at UL
+          Our next offline meet up will be held on 27 March 2023 at UL
           CyberPark, Nellikode (PO), Kozhikode (Calicut)
         </div>
       </v-card-text>
@@ -36,7 +36,7 @@
           </a>
         </div>
         <div class="view-more-btn">
-          <router-link to="/event" style="text-decoration: none">
+          <!-- <router-link to="/event" style="text-decoration: none"> -->
           <v-btn
             text
             color="white "
@@ -47,7 +47,7 @@
             View More
             <v-icon class="ml-3 arrow" color="primary">mdi-arrow-right </v-icon>
           </v-btn>
-        </router-link>
+        <!-- </router-link> -->
         </div>
 
         
