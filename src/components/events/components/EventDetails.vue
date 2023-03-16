@@ -109,7 +109,7 @@ export default {
       {
         time: "4:30 - 5:00 PM",
         venueDetials: [
-          { name: "Venue-1", title: "Sreerag Mohan", subTitle: "Full Stack Engineer at ACTC",topic:[] },
+          { name: "Venue-1", title: "Sreerag Mohan", subTitle: "Full Stack Engineer at ACTC",topic:["Amazon Code Catalyst"] },
         ],
       },
       {
