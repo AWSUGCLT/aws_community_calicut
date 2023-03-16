@@ -8,8 +8,8 @@
         </div>
       </div>
       <div class="card-shedule-two">
-        <div v-if="event.break" class="card-shedule-two-div ">
-          <h1 class="text--center ma-auto  ">{{ event.name }}</h1>
+        <div v-if="event.break" class="card-shedule-two-div">
+          <h1 class="text--center ma-auto">{{ event.name }}</h1>
         </div>
         <div v-else class="card-shedule-two-div">
           <v-tabs
@@ -37,7 +37,17 @@
                   <v-card-title class="headline">
                     {{ venue.title }}
                   </v-card-title>
-                  <v-card-subtitle> {{ venue.subTitle }} </v-card-subtitle>
+                  <v-card-subtitle>
+                    <h3>{{ venue.subTitle }}</h3>
+                    <div v-if="venue.topic && venue.topic.length " class="mt-2">
+                      <h3>Topic</h3>
+                      <ul class="mt-2">
+                        <li v-for="topic in venue.topic" :key="topic">
+                          {{ topic }}
+                        </li>
+                      </ul>
+                    </div>
+                  </v-card-subtitle>
                 </div>
               </div>
             </v-tab-item>

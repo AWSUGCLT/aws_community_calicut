@@ -2,20 +2,6 @@
   <div class="main-one">
     <div class="home-container">
       <div class="home-main ">
-        <!-- <v-layout class="mt-n15  " wrap >
-      <v-flex xs12 sm12 md6>
-        <about />
-      </v-flex>
-      <v-flex xs12  sm12 md6 class="mt-xs-n10"> 
-        <v-img
-          class="mt-md-10"
-          height="65vh"
-          aspect-ratio="1"
-          contain
-          src="@/assets/images/banner.jpg"
-        />
-      </v-flex>
-    </v-layout> -->
         <div class="home-about">
           <about />
         </div>
