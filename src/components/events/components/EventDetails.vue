@@ -87,39 +87,39 @@ export default {
           { name: "Venue-2", title: "Hackathon", subTitle: "" },
         ],
       },
-      // {
-      //   time: "3:00 - 3:30 PM",
-      //   venueDetials: [{ name: "Venue-1", title: "Anoop", subTitle: "Sr. Software Engineer, Rybbon",topic: ["AWS SageMaker Canvas"], }],
-      // },
+      {
+        time: "3:00 - 3:30 PM",
+        venueDetials: [{ name: "Venue-1", title: "Anoop", subTitle: "Sr. Software Engineer, Rybbon",topic: ["AWS SageMaker Canvas"], }],
+      },
       {
         time: "3:30 - 4:00 PM",
-        venueDetials: [{ name: "Venue-1", title: "Anoop", subTitle: "Sr. Software Engineer, Rybbon",topic: ["AWS SageMaker Canvas"], }],
+        venueDetials: [{ name: "Venue-1", title: "Praveesh V", subTitle: "Cloud Architect",topic: ["Cost Optimization in AWS: Best Practices and Strategies"], }],
       },
       {
         time: "4:00 - 4:30 PM",
         break: true,
         name: "Teak Break",
       },
+      // {
+      //   time: "4:30 - 5:00 PM",
+      //   venueDetials: [
+      //     { name: "Venue-1", title: "Praveesh", subTitle: "" ,topic: ["Cost Optimization in AWS: Best Practices and Strategies"],},
+      //   ],
+      // },
       {
         time: "4:30 - 5:00 PM",
-        venueDetials: [
-          { name: "Venue-1", title: "Praveesh", subTitle: "" ,topic: ["Cost Optimization in AWS: Best Practices and Strategies"],},
-        ],
-      },
-      {
-        time: "5:00 - 5:30 PM",
         venueDetials: [
           { name: "Venue-1", title: "Sreerag Mohan", subTitle: "Full Stack Engineer at ACTC",topic:[] },
         ],
       },
       {
-        time: "5:30 - 6:00 PM",
+        time: "5:00 - 5:30 PM",
         venueDetials: [
           { name: "Venue-1", title: "Open discussion", subTitle: "" },
         ],
       },
       {
-        time: "6:00 PM",
+        time: "5:30 - 6:00 PM",
         venueDetials: [
           { name: "Venue-1", title: "vote of thanks", subTitle: "" },
         ],

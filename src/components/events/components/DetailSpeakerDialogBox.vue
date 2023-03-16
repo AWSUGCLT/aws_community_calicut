@@ -7,7 +7,7 @@
       transition="dialog-bottom-transition"
     >
       <v-card v-if="isSpeaker">
-        <v-toolbar dark color="primary">
+        <v-toolbar dark class="toolbar-fixed" color="primary">
           <v-btn icon dark @click="dialog = false">
             <v-icon>mdi-close</v-icon>
           </v-btn>
@@ -26,7 +26,7 @@
         </div>
       </v-card>
       <v-card v-else>
-        <v-toolbar dark color="primary">
+        <v-toolbar dark class="toolbar-fixed" color="primary">
           <v-btn icon dark @click="dialog = false">
             <v-icon>mdi-close</v-icon>
           </v-btn>
@@ -145,5 +145,11 @@ export default {
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+}
+.toolbar-fixed{
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 20;
 }
 </style>

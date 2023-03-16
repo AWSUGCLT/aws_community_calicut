@@ -38,12 +38,12 @@
                     {{ venue.title }}
                   </v-card-title>
                   <v-card-subtitle>
-                    <h3>{{ venue.subTitle }}</h3>
+                    <h3 class="font-italic mt-2 primary--text">{{ venue.subTitle }}</h3>
                     <div v-if="venue.topic && venue.topic.length " class="mt-2">
-                      <h3>Topic</h3>
-                      <ul class="mt-2">
+                      <h3 class="topic">Topic</h3>
+                      <ul class="my-2">
                         <li v-for="topic in venue.topic" :key="topic">
-                          {{ topic }}
+                         <h3 class="topic-point ">{{ topic }}</h3> 
                         </li>
                       </ul>
                     </div>
@@ -101,6 +101,13 @@ export default {
   padding: 3px 30px;
   border-radius: 4px 0px 0 4px !important;
   /* margin: 10px; */
+}
+.topic{
+  text-decoration: underline;
+}
+.topic-point{
+  /* letter-spacing: .8px; */
+  /* font:italic; */
 }
 .card-shedule-one-div {
   display: flex;

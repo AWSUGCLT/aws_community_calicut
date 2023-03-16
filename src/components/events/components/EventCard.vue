@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card elevation="5">
+    <v-card elevation="5" class="card-full">
       <div  class="card-img">
         <img src="../../../assets/eventfinal.jpg" alt="" />
       </div>
@@ -93,4 +93,7 @@ export default {
 .view-more-btn {
   flex: 1;
 } 
+.card-img{
+  background-image: linear-gradient(145deg, #890b79 0%, #cf1697 100%); 
+}
 </style>

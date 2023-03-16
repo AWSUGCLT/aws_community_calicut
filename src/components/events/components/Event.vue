@@ -118,7 +118,7 @@ export default {
   /* background-image:  linear-gradient(145deg,#ff2197 0%,#ffd625 100%); */
 /* align-items: center; */
 /* margin: auto; */
- width: 50%;
+ width: 100%;
   background-image: linear-gradient(145deg, #7e5ce6 0%, #25b8ee 100%);
   letter-spacing: 2px;
   font-size: 14px;

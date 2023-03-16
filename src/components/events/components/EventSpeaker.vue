@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card elevation="5">
+    <v-card elevation="5" class="card-full">
       <div class="card-img">
         <div class="card-image-padding">
           <img src="../../../assets/final_logo.png" alt="" />
@@ -70,6 +70,10 @@ export default {
   /* height: 12rem; */
 }
 .card-image-padding {
+  background-image: linear-gradient(145deg, #890b79 0%, #cf1697 100%);
   padding: 0px 100px;
+}
+.card-full{
+  
 }
 </style>
