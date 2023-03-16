@@ -21,7 +21,7 @@
     </div>
     <v-layout justify-center>
       <a
-        href="https://www.linkedin.com/groups/9202512"
+        href="https://www.meetup.com/awsugclt/"
         style="text-decoration: none"
       >
         <v-btn class="tertiary white--text second-1 lighten-1 button-bg-1">
