@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Event Schedule</h1>
-    <h2>Tuesday, March 27</h2>
+    <h2>Monday, March 27</h2>
     <hr class="mb-5" />
     <div v-for="(event, index) in eventDetails" class="py-3 px-1" :key="index">
       <event-shedule-card :event="event" />
