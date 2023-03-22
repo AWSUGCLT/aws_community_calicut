@@ -39,7 +39,7 @@ export default {
             title: "Aparajithan Vaidyanathan",
             subTitle: "Principal Solutions Architect at AWS, Bangalore, India",
             topic: [
-              "Envisioning customer identity and access management using Amazon Cognito. Overview + Short Demo",
+              // "Envisioning customer identity and access management using Amazon Cognito. Overview + Short Demo",
               "Overview of Data Analytics and AI/ML offerings and capabilities from AWS. Covers the services used for e2e DA & ML including data ingestion, storage, processing, query, visualization and ML. a. Can be one or two session covering DA and AI/ML separately or together. b. Can also do a simple demo",
             ],
           },
@@ -62,7 +62,7 @@ export default {
       },
       {
         time: "12:00 - 12:30 PM",
-        venueDetials: [{ name: "Venue-1", title: "Faizal", subTitle: "Manager, Database Administration, Rybbon",topic: ["RDS - Aurora"], }],
+        venueDetials: [{ name: "Venue-1", title: "Fizal", subTitle: "Manager, Database Administration, Rybbon",topic: ["RDS - Aurora"], }],
       },
       {
         time: "12:30 - 1:00 PM",
@@ -98,7 +98,7 @@ export default {
       {
         time: "4:00 - 4:30 PM",
         break: true,
-        name: "Teak Break",
+        name: "Tea Break", 
       },
       // {
       //   time: "4:30 - 5:00 PM",
@@ -112,14 +112,14 @@ export default {
           { name: "Venue-1", title: "Sreerag Mohan", subTitle: "Full Stack Engineer at ACTC",topic:["Amazon Code Catalyst"] },
         ],
       },
+      // {
+      //   time: "5:00 - 5:30 PM",
+      //   venueDetials: [
+      //     { name: "Venue-1", title: "Open discussion", subTitle: "" },
+      //   ],
+      // },
       {
-        time: "5:00 - 5:30 PM",
-        venueDetials: [
-          { name: "Venue-1", title: "Open discussion", subTitle: "" },
-        ],
-      },
-      {
-        time: "5:30 - 6:00 PM",
+        time: "5:00 - 6:00 PM",
         venueDetials: [
           { name: "Venue-1", title: "vote of thanks", subTitle: "" },
         ],
