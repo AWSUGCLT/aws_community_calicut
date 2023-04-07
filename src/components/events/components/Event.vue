@@ -1,8 +1,8 @@
 <template>
   <div class="card-main">
     <event-card class="card-1 mt-5" />
-    <event-speaker :isSpeaker="true" class="card-1 mt-5" />
-    <event-speaker :isSpeaker="false" class="card-1 mt-5" />
+    <!-- <event-speaker :isSpeaker="true" class="card-1 mt-5" />
+    <event-speaker :isSpeaker="false" class="card-1 mt-5" /> -->
   </div>
 </template>
 <script>
@@ -43,7 +43,7 @@ export default {
   display: flex;
   gap: 40px;
   /* align-items: center; */
-  justify-content: center;
+  /* justify-content: center; */
   /* display: grid;
   grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
   gap: 40px;

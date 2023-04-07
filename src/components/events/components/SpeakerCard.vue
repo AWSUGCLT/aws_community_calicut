@@ -29,7 +29,9 @@
           </div>
 
           <div class="front-detail mt-10">
-            <v-btn @click="showDetail = !showDetail" class="primary--text  text-center"
+            <v-btn
+              @click="showDetail = !showDetail"
+              class="primary--text text-center"
               >back</v-btn
             >
           </div>
@@ -112,6 +114,7 @@ export default {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 .flip-card-front {
