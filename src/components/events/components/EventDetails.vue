@@ -1,194 +1,113 @@
 <template>
   <div>
-    <h1>Event Schedule</h1>
-    <h2>Monday, March 27</h2>
-    <hr class="mb-5" />
-    <!-- <div v-for="(event, index) in eventDetails" class="py-3 px-1" :key="index">
-      <event-shedule-card :event="event" />
-    </div> -->
-    <!-- /> -->
-    <div class="card-main">
-      <event-speaker :isSpeaker="true" class="card-1 mt-5" />
-    </div>
+    <v-card elevation="5" class="card-full">
+      <div class="card-img">
+        <div class="card-image-padding">
+          <img src="../../../assets/final_logo.png" alt="" />
+        </div>
+      </div>
+      <div class="card-details">
+        <v-card-text>
+          <div class="tertiary--text">27 Mar 2023</div>
+          <p v-if="isSpeaker" class="text-h6 tertiary--text">Event Speakers</p>
+          <p v-else class="text-h6 tertiary--text">Event Images</p>
+
+          <p class="mr-n3 mt-n3 primary--text">
+            <v-icon color="primary">mdi-map-marker </v-icon>UL CyberPark -
+            Calicut
+          </p>
+          <div>
+            <p v-if="isSpeaker">
+              We would like to extend sincere thanks to the speakers, Apar V.
+              and Gaurav Gupta from AWS , Dijeesh Padinharethil, Muhamad Fizal,
+              Vijaysai M S , Vishnu KS, Amal Mathew, Anoop G, Praveesh V,
+              Sreerag Mohan
+            </p>
+            <p v-else>
+              Special thanks mention to BHN Rewards (formerly Rybbon) and UL
+              CyberPark for this event sponsorship and would also like to extend
+              our gratitude to all the volunteers who worked tirelessly behind
+              the scenes to make this event successful
+            </p>
+          </div>
+        </v-card-text>
+        <v-card-actions class="action-button text-center">
+          <div class="view-more-btn">
+            <v-btn
+              text
+              color=""
+              style="text-transform: capitalize"
+              class="register-btn"
+              @click="openDialog = true"
+            >
+              View More
+              <v-icon class="ml-3 arrow" color="primary"
+                >mdi-arrow-right
+              </v-icon>
+            </v-btn>
+            <both-event-dialog-box
+              @dialogClose="dialogClose"
+              :openDialog="openDialog"
+              :isSpeaker="isSpeaker"
+              v-show="false"
+            />
+          </div>
+        </v-card-actions>
+      </div>
+    </v-card>
   </div>
 </template>
-
-<script>
-import EventSheduleCard from "./EventSheduleCard.vue";
-import EventSpeaker from "./EventSpeaker.vue";
+  
+  <script>
+import BothEventDialogBox from "./BothEventDialogBox.vue";
+// import DetailSpeakerDialogBox from './DetailSpeakerDialogBox.vue';
+// import DetailDialogBox from "./DetailSpeakerDialogBox.vue";
 export default {
-  components: { EventSheduleCard, EventSpeaker },
-  data: () => ({
-    eventDetails: [
-      {
-        time: "8:00 - 9:00 AM",
-        venueDetials: [
-          { name: "Venue-1", title: "Registration", subTitle: "" },
-        ],
-      },
-      {
-        time: "9:00 - 9:30 AM",
-        venueDetials: [
-          {
-            name: "Venue-1",
-            title: "Kickoff for AWS User Group",
-            subTitle: "",
-          },
-        ],
-      },
-      {
-        time: "9:30 - 10:30 AM",
-        venueDetials: [
-          {
-            name: "Venue-1",
-            title: "Aparajithan Vaidyanathan",
-            subTitle: "Principal Solutions Architect at AWS, Bangalore, India",
-            topic: [
-              // "Envisioning customer identity and access management using Amazon Cognito. Overview + Short Demo",
-              "Overview of Data Analytics and AI/ML offerings and capabilities from AWS. Covers the services used for e2e DA & ML including data ingestion, storage, processing, query, visualization and ML. a. Can be one or two session covering DA and AI/ML separately or together. b. Can also do a simple demo",
-            ],
-          },
-        ],
-      },
-      {
-        time: "10:30 - 11:30 AM",
-        venueDetials: [
-          {
-            name: "Venue-1",
-            title: "Gaurav Gupta",
-            subTitle: "Principal Solutions Architect at AWS, Bangalore, India",
-            topic: [
-              "Overview of Serverless on AWS",
-              "Event-Driven Architectures",
-              "Serverless use cases ",
-            ],
-          },
-        ],
-      },
-      {
-        time: "11:30 - 12:00 PM",
-        venueDetials: [
-          {
-            name: "Venue-1",
-            title: "Dijeesh Padinharethil",
-            subTitle:
-              "Director of Engineering, AWS Container Hero, Organizer - AWSUGKOCHI / CNCFKOCHI, Sedai",
-            topic: ["Running Containers on AWS"],
-          },
-        ],
-      },
-      {
-        time: "12:00 - 12:30 PM",
-        venueDetials: [
-          {
-            name: "Venue-1",
-            title: "Fizal",
-            subTitle: "Manager, Database Administration, Rybbon",
-            topic: ["RDS - Aurora"],
-          },
-        ],
-      },
-      {
-        time: "12:30 - 1:00 PM",
-        venueDetials: [
-          {
-            name: "Venue-1",
-            title: "Vijay Sai",
-            subTitle: "Sr. Software QA Engineer, Rybbon",
-            topic: ["Distributed Load testing on AWS with Jmeter"],
-          },
-        ],
-      },
-      {
-        time: "1:00 - 2:00 PM",
-        break: true,
-        name: "Lunch Break",
-      },
-      {
-        time: "2:00 - 2:30 PM",
-        venueDetials: [
-          {
-            name: "Venue-1",
-            title: "Vishnu Ks",
-            subTitle: "",
-            topic: [
-              "Migrate VMs from anywhere to AWS using open source / Setting up EKS cluster using terraform and fluxcd",
-            ],
-          },
-          { name: "Venue-2", title: "Hackathon", subTitle: "" },
-        ],
-      },
-      {
-        time: "2:30 - 3:00 PM",
-        venueDetials: [
-          {
-            name: "Venue-1",
-            title: "Amal Mathew",
-            subTitle: "Sr. Software Engineer, QBurst",
-            topic: ["Amazon S3 Glacier for Long-Term Data Storage"],
-          },
-          { name: "Venue-2", title: "Hackathon", subTitle: "" },
-        ],
-      },
-      {
-        time: "3:00 - 3:30 PM",
-        venueDetials: [
-          {
-            name: "Venue-1",
-            title: "Anoop",
-            subTitle: "Sr. Software Engineer, Rybbon",
-            topic: ["AWS SageMaker Canvas"],
-          },
-        ],
-      },
-      {
-        time: "3:30 - 4:00 PM",
-        venueDetials: [
-          {
-            name: "Venue-1",
-            title: "Praveesh V",
-            subTitle: "Cloud Architect",
-            topic: ["Cost Optimization in AWS: Best Practices and Strategies"],
-          },
-        ],
-      },
-      {
-        time: "4:00 - 4:30 PM",
-        break: true,
-        name: "Tea Break",
-      },
-      // {
-      //   time: "4:30 - 5:00 PM",
-      //   venueDetials: [
-      //     { name: "Venue-1", title: "Praveesh", subTitle: "" ,topic: ["Cost Optimization in AWS: Best Practices and Strategies"],},
-      //   ],
-      // },
-      {
-        time: "4:30 - 5:00 PM",
-        venueDetials: [
-          {
-            name: "Venue-1",
-            title: "Sreerag Mohan",
-            subTitle: "Full Stack Engineer at ACTC",
-            topic: ["Amazon Code Catalyst"],
-          },
-        ],
-      },
-      // {
-      //   time: "5:00 - 5:30 PM",
-      //   venueDetials: [
-      //     { name: "Venue-1", title: "Open discussion", subTitle: "" },
-      //   ],
-      // },
-      {
-        time: "5:00 - 6:00 PM",
-        venueDetials: [
-          { name: "Venue-1", title: "vote of thanks", subTitle: "" },
-        ],
-      },
-    ],
-  }),
+  components: { BothEventDialogBox },
+  props: {
+    isSpeaker: {},
+  },
+  methods: {
+    dialogClose() {
+      this.openDialog = false;
+    },
+  },
+  data() {
+    return {
+      openDialog: false,
+    };
+  },
 };
 </script>
-
-<style></style>
+  
+  <style scoped>
+.card-image-speaker {
+  /* width: 70%; */
+  /* height: 12rem; */
+}
+.card-image-padding {
+  /* padding: 0px 60px; */
+  /* padding: 40px; */
+}
+.card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20vw;
+  background-image: linear-gradient(145deg, #890b79 0%, #cf1697 100%);
+}
+.card-full {
+  display: flex;
+  /* background: #000; */
+}
+.card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  .card-full {
+    flex-direction: column;
+  }
+}
+</style>

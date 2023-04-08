@@ -6,7 +6,7 @@
       :scrim="false"
       transition="dialog-bottom-transition"
     >
-      <v-card v-if="isSpeaker">
+      <!-- <v-card v-if="isSpeaker && fromEventDetails">
         <v-toolbar dark class="toolbar-fixed" color="primary">
           <v-btn icon dark @click="dialog = false">
             <v-icon>mdi-close</v-icon>
@@ -25,7 +25,26 @@
           </div>
         </div>
       </v-card>
-      <v-card v-else>
+      <v-card v-else-if="!isSpeaker && fromEventDetails"> 
+        <v-toolbar dark class="toolbar-fixed" color="primary">
+          <v-btn icon dark @click="dialog = false">
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
+          <v-toolbar-title>Images</v-toolbar-title>
+          <v-spacer></v-spacer>
+        </v-toolbar>
+        <div class="ma-5">
+          <h1>Images</h1>
+          <div class="speaker mt-5">
+            <speaker-card
+              :speaker="speaker"
+              v-for="speaker in speakerData"
+              :key="speaker.name"
+            />
+          </div>
+        </div>
+      </v-card> -->
+      <v-card>
         <v-toolbar dark class="toolbar-fixed" color="primary">
           <v-btn icon dark @click="dialog = false">
             <v-icon>mdi-close</v-icon>
@@ -34,8 +53,16 @@
           <v-spacer></v-spacer>
         </v-toolbar>
         <div class="ma-5">
-          <div class=" mt-5">
-            <event-details />
+          <div class="mt-5">
+            <!-- <event-details /> -->
+            <h1>Event Schedule</h1>
+            <h2>Monday, March 27</h2>
+            <hr class="mb-5" />
+            <div>
+            
+              <event-details :isSpeaker="true" class="card-1 mt-5" />
+              <event-details :isSpeaker="false" class="card-1 mt-5" />
+            </div>
           </div>
         </div>
       </v-card>
@@ -43,13 +70,11 @@
   </v-row>
 </template>
   <script >
-import EventDetails from "./EventDetails.vue";
-import SpeakerCard from "./SpeakerCard.vue";
+import EventDetails from './EventDetails.vue';
 export default {
-  components: { SpeakerCard, EventDetails },
+  components: { EventDetails}, 
   props: {
     openDialog: {},
-    isSpeaker: {},
   },
   watch: {
     openDialog(newVal) {
@@ -146,7 +171,7 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
 }
-.toolbar-fixed{
+.toolbar-fixed {
   position: sticky;
   width: 100%;
   top: 0;
